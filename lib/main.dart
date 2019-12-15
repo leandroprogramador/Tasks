@@ -13,7 +13,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List _toDoList = [];
+  List _toDoList = ["Kotlin", "Dart", "Java"];
 
   @override
   Widget build(BuildContext context) {
@@ -28,11 +28,11 @@ class _HomeState extends State<Home> {
               child: Row(
                 children: <Widget>[
                   Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "New Task",
-                            labelStyle: TextStyle(color: Colors.blueAccent)),
-                      ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          labelText: "New Task",
+                          labelStyle: TextStyle(color: Colors.blueAccent)),
+                    ),
                   ),
                   RaisedButton(
                     color: Colors.blueAccent,
@@ -41,7 +41,18 @@ class _HomeState extends State<Home> {
                     onPressed: () {},
                   )
                 ],
-              ))
+              )),
+          Expanded(
+            child: ListView.builder(
+                padding: EdgeInsets.only(top: 10.0),
+                itemCount: _toDoList.length,
+                itemBuilder: (context, index){
+                  return ListTile(
+                    title: _toDoList[index],
+                  );
+                }
+            ),
+          )
         ]));
   }
 
