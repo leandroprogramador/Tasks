@@ -1,16 +1,8 @@
 # tasks
 
-A new Flutter application.
+A simple flutter application to add and remove tasks.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project was make with flutter based in a flutter course hosted in Udemy. It's just a simple app to add tasks, mark as resolved and remove from list.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
